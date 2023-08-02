@@ -1,0 +1,162 @@
+steps:
+  STG_PARTSUPP1-ab1f6f43-e650-4098-9a35-cb323be9b20e:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: a6b19eb9-4bbd-4c6c-bb84-7f740d278ebb
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PS_PARTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18602
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 2cadd15b-b92b-40cf-b148-0560c3f0da1f
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PS_SUPPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18603
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: fcd97271-94dc-4867-8ce1-0e988619fb78
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PS_AVAILQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18604
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 21e51e5c-21d3-45e1-8c58-cf7168a2d000
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PS_SUPPLYCOST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18605
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 8fc0ed18-5ef4-4b0a-93b2-4699d926c41e
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: VARCHAR(199)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PS_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18606
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 8e5fcd94-17d0-463f-a7eb-d9912e144f6b
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: H_PART_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18625
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 411fb104-2d00-4050-b3b4-7e2d92c8737b
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: H_SUPPLIER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18626
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: fd603d5e-f82f-4d73-a52d-e0d7a4b1a8da
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_SUPPLIER_PART_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18627
+                    stepCounter: "1619"
+                transform: ""
+          - columnReference:
+              columnCounter: 2d06aab7-d05f-4ae0-a4e6-fc6500c5cc90
+              stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LS_SUPPLIER_PART_HASH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 18628
+                    stepCounter: "1619"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STG_PARTSUPP
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'STG_PARTSUPP') }} "STG_PARTSUPP"
+            name: STG_PARTSUPP1
+            noLinkRefs: []
+      name: STG_PARTSUPP1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: ab1f6f43-e650-4098-9a35-cb323be9b20e
