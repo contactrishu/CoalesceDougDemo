@@ -1,0 +1,232 @@
+steps:
+  STG_PART1-1b964e55-4dbe-429d-9972-8ade9eb56bb3:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: Part data as defined by TPC-H
+      isMultisource: false
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 0695c59e-970f-42fd-8c03-3131d98af6a9
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_PARTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0099d4da-022c-4615-8486-ea09aefad2cf
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: bcb56a09-96af-4617-9859-1833fc497b75
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(55)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cef0f2a1-6755-4dfd-9329-3320774c2c5d
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 40c03205-583f-4ff6-ba45-df9abc7d5c4f
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_MFGR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0d958fdb-48eb-4921-8935-463042ab5fd2
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 2ccab78b-6b5d-43f9-af87-e9aee07bc6de
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_BRAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4317bebe-bc34-4915-bb26-be90c49f8fc7
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: c82b7d8f-2bd1-4ad9-abd5-0ea32b67fe8b
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ec7610b2-7e64-482a-8670-34d20475e3b5
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 3c25b2a5-85e3-456a-966c-cf4c57ab1712
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d0bbbb4b-9630-4450-b30e-73a3000393c3
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: ad5fa8cc-4264-4db7-b292-e29c3db46bde
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_CONTAINER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8366a564-e7a9-4bcd-952e-28cf5b727b86
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 00f2c685-e06f-4758-a71f-4cc4386f8478
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_RETAILPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f49de606-69d0-4438-991b-ef716b41294d
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 18e2fd58-4fcc-4260-9e9b-e18c4adcebae
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(23)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: P_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1ef698d3-3123-4d24-821d-a85212068ef2
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 66645262-789d-4abb-9975-e538db3f359a
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: STRING
+            description: Indicates the DML operation (INSERT, DELETE) recorded.
+            hashColumns: []
+            hashDetails: null
+            name: METADATA$ACTION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 41c9c3d3-8347-43a7-b1ba-c8a336096908
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: f46fb8e9-78b7-48c7-83d2-02b5da00adaa
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: STRING
+            description: Indicates whether the operation was part of an UPDATE statement.
+            hashColumns: []
+            hashDetails: null
+            name: METADATA$ISUPDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1cded948-977f-430e-910f-1892d9bba731
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: c860dea3-d8aa-433c-baa5-250ed87c587b
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: STRING
+            description: Specifies the unique and immutable ID for the row, which can be used to track changes to specific rows over time.
+            hashColumns: []
+            hashDetails: null
+            name: METADATA$ROW_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 951a28f1-2c4b-4772-989c-3dcb60c29969
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 474b4ced-fd86-4e86-b504-df5b38f3341b
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: INTEGER
+            description: Medtronic specific CDC identifier based on a sequence.
+            hashColumns: []
+            hashDetails: null
+            name: CDC_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8f76650a-c095-4668-b420-04ef538a07af
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+          - columnReference:
+              columnCounter: 38fd8c55-a76d-4f80-bbdc-69bced808aec
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: TIMESTAMP
+            description: Medtronic specific attribute containing the timestamp of storing the CDC record.
+            hashColumns: []
+            hashDetails: null
+            name: CDC_TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: bdf1bf99-9b2f-4e5b-97bc-b8dc236a91fa
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: CDC_PART
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'CDC_PART') }} "CDC_PART"
+            name: STG_PART1
+            noLinkRefs: []
+      name: STG_PART1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
