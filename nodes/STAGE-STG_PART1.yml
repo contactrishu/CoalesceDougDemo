@@ -212,6 +212,22 @@ steps:
                   - columnCounter: bdf1bf99-9b2f-4e5b-97bc-b8dc236a91fa
                     stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
                 transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 52b717fa-5be7-4253-8360-13ffca2e99aa
+              stepCounter: 1b964e55-4dbe-429d-9972-8ade9eb56bb3
+            dataType: VARCHAR(23)
+            description: ""
+            name: P_COMMENT1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 618200bb-aeb7-42ea-8886-f236b0b00225
+                    stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

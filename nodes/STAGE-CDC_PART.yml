@@ -238,6 +238,22 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 618200bb-aeb7-42ea-8886-f236b0b00225
+              stepCounter: e55cfc70-3f65-485b-8fc3-246434fa3ab1
+            dataType: VARCHAR(23)
+            description: ""
+            name: P_COMMENT1
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 38be8639-7119-4212-99a1-ab129dcf32f1
+                    stepCounter: 76b4860d-9b75-45ca-9dfb-05c575cc1f3b
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
