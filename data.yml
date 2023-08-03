@@ -2451,11 +2451,6 @@ stepTypes:
             displayName: Insert Zero Key Record
             default: true
 
-          - type: toggleButton
-            attributeName: insertZeroKey1
-            displayName: Dougs Toggle
-            default: true
-
 
           - type: changeTrackingColumns
             isRequired: false
